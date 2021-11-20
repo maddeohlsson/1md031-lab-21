@@ -1,1 +1,124 @@
-/*empty*/
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
+
+
+body {
+    font-family: "Corsiva Hebrew";
+}
+#header{
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%;
+    margin-top: -100px;
+    overflow:hidden;
+}
+#header_text{
+    margin-top: -200px;
+    margin-bottom: 10px;
+    position: center;
+    padding-left: 10px;
+
+}
+.burgertext{
+    margin-top: 50px;
+    grid-column: 1/span 3;
+}
+
+#allergy {
+    color: coral;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.wrapper{
+display: grid;
+    grid-gap: 10px;
+}
+
+.burger1 {
+    color: black;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+    grid-columns: 1;
+    grid-row: 2;
+}
+
+
+.burger2{
+    color: black;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+    grid-columns: 2;
+    grid-row: 2;
+
+}
+
+
+.burger3{
+    color: black;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+    grid-columns: 3;
+    grid-row: 2;
+
+
+}
+
+.main {
+    border: 4px dotted deeppink;
+    padding-left: 10px;
+
+
+
+}
+
+.Information{
+    padding-left: 10px;
+    border: 4px dotted deeppink;
+    background-color: gold;
+
+
+}
+/*
+#allergy {
+    text-transform: capitalize;
+}
+
+ */
+
+
+
+button:hover {
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration-thickness: 12px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+/*a, strong, em{
+    color: #0099ff;
+}
+p.info,
+#login p{
+    width: 80%;
+    margin: 1vw auto;
+}
+
+
+ */
