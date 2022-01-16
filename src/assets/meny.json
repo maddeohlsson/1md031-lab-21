@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Classic Burger",
+    "kCal": 250,
+    "Lactose": true,
+    "Gluten": true,
+    "Price": 79,
+    "url": "https://cdn-bk-se-ordering.azureedge.net/media/x0ljohbg/bk-kiosk-checkout-machine-400x290_singel_roasted_onion_singlebeef.png"
+
+  },
+  {
+    "name": "Fish Burger",
+    "kCal": 230,
+    "Lactose": false,
+    "Gluten": false,
+    "Price": 89,
+    "url":"https://cdn-bk-se-ordering.azureedge.net/media/n0knbykw/bk-fish-400x290px.png"
+
+
+  },
+  {
+    "name": "Chicken Burger",
+    "kCal": 290,
+    "Lactose": true,
+    "Gluten": true,
+    "Price": 89,
+    "url":"https://cdn-bk-se-ordering.azureedge.net/media/tzdfpoe0/bk_kiosk_400x290_singel_crispychicken.png"
+
+
+  }
+
+
+]
