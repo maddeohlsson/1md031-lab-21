@@ -217,25 +217,6 @@ section{
   padding-left: 10px;
 
 }
-/*.wrapper{
-  display: grid;
-  grid-gap: 40px;
-}
-.burger1{
-  grid-column: 1 ;
-  grid-row: 2;
-  margin:10px;
-}
-.burger2{
-  grid-column: 2 ;
-  grid-row: 2;
-  margin:10px;
-}
-.burger3{
-  grid-column: 3;
-  grid-row: 2;
-  margin:10px;*/
-/*}*/
 
 .wrapperBurger{
   display: grid;
