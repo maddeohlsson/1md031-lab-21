@@ -11,7 +11,7 @@
   {
     "name": "Fish Burger",
     "kCal": 230,
-    "Lactose": false,
+    "Lactose": true,
     "Gluten": false,
     "Price": 89,
     "url":"https://cdn-bk-se-ordering.azureedge.net/media/n0knbykw/bk-fish-400x290px.png"

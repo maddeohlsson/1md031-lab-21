@@ -18,7 +18,7 @@ body {
     padding-left: 10px;
 
 }
-.burgertext{
+.burgerText{
     margin-top: 50px;
     grid-column: 1/span 3;
 }

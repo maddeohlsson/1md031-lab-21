@@ -1,8 +1,8 @@
 <template>
   <div class = "Burgers">
 
-    <h3 class = "burgername">{{ burger.name }}</h3>
-    <img class = "Burgerimage" v-bind:src = "burger.url">
+    <h3 class = "burgerName">{{ burger.name }}</h3>
+    <img class = "burgerImage" v-bind:src = "burger.url">
 
 
     <ul>
@@ -15,8 +15,8 @@
     <br>
         <div >
       Amount:{{amountOrdered}}
-      <button v-on:click = "decreaseOrder" class="amountbutton"> - </button>
-      <button v-on:click = "increaseOrder" class="amountbutton"> + </button>
+      <button v-on:click = "decreaseOrder" class="amountButton"> - </button>
+      <button v-on:click = "increaseOrder" class="amountButton"> + </button>
           {{amountOrdered}}Orders
         </div>
   </div>
@@ -63,14 +63,7 @@
 
 <style scoped>
 
-/*.wrapper{
-
-  display: grid;
-  grid-gap: 10px;
-
-
-}*/
-.Burgerimage{
+.burgerImage{
   height: 300px;
   width: 300px;
 
@@ -79,14 +72,14 @@
 
 
 }
-.burgername{
+.burgerName{
   text-align: center;
 }
 .ingredients{
   font-weight: bold;
   color: deeppink;
 }
-.amountbutton{
+.amountButton{
   width: 50px;
   height: 30px;
   font-family: "AppleGothic";

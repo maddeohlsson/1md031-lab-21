@@ -1,12 +1,12 @@
 <template>
 
   <div id="header">
-    <img src="https://kidsartprojects101.com/wp-content/uploads/2019/09/abstract-2468874-1600x533.jpg" id="headerimage">
+    <img src="https://kidsartprojects101.com/wp-content/uploads/2019/09/abstract-2468874-1600x533.jpg" id="headerImage">
     <h1 id="header_text">Welcome to Classic Fantastic</h1>
   </div>
   <div >
-    <h2>Pick your burgers here</h2>
-    <div class="wrapperburger">
+    <h2>Burgermenu</h2>
+    <div class="wrapperBurger">
       <Burger v-for="burger in burgers"
               v-bind:burger="burger"
               v-bind:key="burger.name"
@@ -18,7 +18,7 @@
 
   <h3> Delivery information </h3>
 
-  <div id="backgroundform">
+  <div id="backgroundForm">
 
     <form>
       <p>
@@ -53,7 +53,7 @@
       <label for="nogender"> Do not wish to provide  </label><br>
     </form>
 
-    <div class="scrollmap">
+    <div class="scrollMap">
       <div id="map" v-on:click="setLocation" >
         <div id="dots">
           <div  v-bind:style="{ left: location.x +'px', top: location.y +'px'}"  >
@@ -69,7 +69,7 @@
 
 
 
-  <button v-on:click="submitorder(key)">
+  <button v-on:click="submitOrder(key)">
     <img src="https://media.istockphoto.com/vectors/green-check-mark-icon-tick-symbol-tick-icon-vector-illustration-vector-id1342603245?b=1&k=20&m=1342603245&s=170667a&w=0&h=fE035vYyGF6_AS5Q2y1Fc0vBs5G56YMo680yGDGKat8=" width="50px">
     Send info
   </button>
@@ -132,8 +132,8 @@ export default {
            });*/
       // this.location = {x: event.clientX - 10 - offset.x, y: event.clientY - 10 - offset.y}
     },
-    submitorder: function () {
-      socket.emit("addOrder", {
+    submitOrder: function () {
+      socket.emit('addOrder', {
             orderId: this.getOrderNumber(),
             details: {
               x: this.location.x,
@@ -150,7 +150,7 @@ export default {
       )},
     setLocation:function (event) {
       let offset = {
-        x: event.currentTarget.getBoundingClientRect().left, //Han ändrade från var till let :)
+        x: event.currentTarget.getBoundingClientRect().left, //Från var till let
         y: event.currentTarget.getBoundingClientRect().top
       };
       this.location = {x: event.clientX - 10 - offset.x, y: event.clientY - 10 - offset.y}
@@ -163,11 +163,11 @@ export default {
 
 
 #map {
-  width: 1920px;
-  height: 1078px;
+  width: 1900px;
+  height: 500px;
   background: url("/img/polacks.jpg");
 }
-.scrollmap{
+.scrollMap{
   height: 500px;
   width: 500px;
   overflow: scroll;
@@ -184,9 +184,9 @@ button:hover {
 button{
   margin: 10px
 }
-#backgroundform{
+#backgroundForm{
   background-color: lightcoral;
-  border: 2px dotted black;
+  border: 2px dotted deepskyblue;
   border-radius: 10px;
   color: black;
   display: grid;
@@ -205,7 +205,7 @@ section{
   border-radius: 30px;
 }
 
-#headerimage{
+#headerImage{
   height: auto;
   width: 100%;
   opacity: 50%;
@@ -237,7 +237,7 @@ section{
   margin:10px;*/
 /*}*/
 
-.wrapperburger{
+.wrapperBurger{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 100%;
