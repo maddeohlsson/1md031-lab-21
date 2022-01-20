@@ -29,9 +29,7 @@
         <span>Payment: {{order.form.selected}} </span>
         <br> <br>
 
-
-
-        <!--      #{{ key }}: {{ order.orderItems.join(", ") }}-->
+        
       </div>
       <button v-on:click="clearQueue">Clear Queue</button>
     </div>
